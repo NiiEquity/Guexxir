@@ -1,4 +1,8 @@
 Guexxir
 =======
 
-** TODO: Add description **
+Clone the repository
+
+`mix do deps.get, compile'
+
+'iex -s mix'
