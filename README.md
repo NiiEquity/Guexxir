@@ -3,6 +3,10 @@ Guexxir
 
 Clone the repository
 
-`mix do deps.get, compile'
+`````````
+mix do deps.get, compile
+`````````
 
-'iex -s mix'
+``````````
+iex -s mix
+``````````
