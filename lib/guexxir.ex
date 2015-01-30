@@ -16,11 +16,21 @@ defmodule Guexxir do
 			IO.puts "Sorry"
 		end
 
-		response = String.strip IO.gets("Will you like to play again? ")
-		if response == "No" do
+		game_loop
+
+	end
+
+	defp game_loop do
+		response = String.strip IO.gets("Will you like to play again? (y/n) ")
+		if response == "n" do
+			IO.puts "Ok will exit the game now ........."
 			exit_game
-		else
+		end
+		if response == "y" do
 			guess
+		else
+			IO.puts "Oh come on, choose a y or n "
+			game_loop
 		end
 	end
 
